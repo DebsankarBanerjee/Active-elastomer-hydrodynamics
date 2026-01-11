@@ -13,6 +13,13 @@ The core engine is written in **Modern Fortran (F90)** for high-performance nume
 * `flux.f90` / `limiter.f90`: High-resolution Finite Volume schemes (Van-Leer limiter).
 * `rk.f90`: 3rd order TVD Runge-Kutta time integration.
 
+
+* **Automated Parameter Sweeps:** A robust Bash pipeline handles the compilation and execution of multiple "Active Stress" () regimes, enabling the study of phase transitions:
+* **Stable** ()
+* **Oscillatory** ()
+* **Spatio-temporal Chaos** ()
+* **Contractile Collapse** ()
+
 ## 🚀 Getting Started
 
 ### Prerequisites
