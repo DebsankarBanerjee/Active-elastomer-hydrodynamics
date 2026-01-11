@@ -9,7 +9,7 @@ The core engine is written in **Modern Fortran (F90)** for high-performance nume
 
 ## 🛠️ Key Features
 
-  * **Modular Fortran Design:** The solver is architected into specific physical modules:
+  * *Modular Fortran Design:* The solver is architected into specific physical modules:
   
 
 
