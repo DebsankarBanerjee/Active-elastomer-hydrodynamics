@@ -1,28 +1,8 @@
-# Active-elastomer-hydrodynamics
-## Codes for active elastomer in one dimensions
-Steps to run the code
-1. run the shell script file (in terminal)-
-
-path to the shell scrpt/ ./make_pulse.sh
-
-(in case of permission issue use: chmod -0755 make_pulse.sh)
-
-2. this should generate "data" and "graph" directories. The plots are mostly labelled and saved in respective sub-dir inside graph according to the parameter values.
-
-3. data was not saved for each run but can be done by uncommenting the following lines in the script:
-   #tar -czvf data/density.tar.gz data/density.txt data/time_evolution.txt
-   #mv data/density.tar.gz graph
-   any file name added in the place of "density.txt" will be saved in the respective plots_* dir inside graph
-   all parameter values are saved in file plots_B_XX_mu_XX.txt in respective plots_* dir inside graph
-
-4. Do not change the file named "makefile" unless any .f90 files are added or removed from the dir "code"
-
-
 ---
 
-# Active Elastomer Dynamics: High-Performance Fortran Solver
+# Active Elastomer Dynamics: High-Performance Finite Volume Solver
 
-This repository contains the numerical implementation of the continuum model for active actomyosin elastomers, as described in [Nature Communications (2017)](https://www.nature.com/articles/s41467-017-01130-1).
+This repository contains the numerical implementation of the continuum model for active actomyosin elastomers using finite volume method, as described in [Nature Communications (2017)](https://www.nature.com/articles/s41467-017-01130-1).
 
 The core engine is written in **Modern Fortran (F90)** for high-performance numerical integration, with a **Bash-based automation layer** for parameter sweeps and **Gnuplot** for automated visualization of phase transitions.
 
@@ -34,13 +14,7 @@ The core engine is written in **Modern Fortran (F90)** for high-performance nume
 * `rk.f90`: 3rd order TVD Runge-Kutta time integration.
 
 
-* **Automated Parameter Sweeps:** A robust Bash pipeline handles the compilation and execution of multiple "Active Stress" () regimes, enabling the study of phase transitions:
-* **Stable** ()
-* **Oscillatory** ()
-* **Spatio-temporal Chaos** ()
-* **Contractile Collapse** ()
-
-
+* **Automated Parameter Sweeps:** A robust Bash pipeline handles the compilation and execution of multiple "Active Stress" regimes, enabling the study of phase transitions:
 
 ## 🚀 Getting Started
 
