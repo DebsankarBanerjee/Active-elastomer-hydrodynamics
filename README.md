@@ -7,19 +7,12 @@ as described in [Nature Communications (2017)](https://www.nature.com/articles/s
 
 The core engine is written in **Modern Fortran (F90)** for high-performance numerical integration, with a **Bash-based automation layer** for parameter sweeps and **Gnuplot** for automated visualization of phase transitions.
 
-## Key Features
+## 🛠️ Key Features
 
 * **Modular Fortran Design:** The solver is architected into specific physical modules:
 * `sigma_active.f90` / `sigma_elastic.f90`: Stress tensor calculations including active renormalization.
 * `flux.f90` / `limiter.f90`: High-resolution Finite Volume schemes (Van-Leer limiter).
 * `rk.f90`: 3rd order TVD Runge-Kutta time integration.
-
-
-* **Automated Parameter Sweeps:** A robust Bash pipeline handles the compilation and execution of multiple "Active Stress" () regimes, enabling the study of phase transitions:
-* **Stable** ()
-* **Oscillatory** ()
-* **Spatio-temporal Chaos** ()
-* **Contractile Collapse** ()
 
 ## 🚀 Getting Started
 
